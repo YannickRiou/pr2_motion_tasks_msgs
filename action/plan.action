@@ -6,7 +6,7 @@ string planGroup
 geometry_msgs/PoseStamped pose
 ---
 #result definition
-moveit_msgs/MoveItErrorCodes error_code
+int32 error_code
 int32 cost
 ---
 #feedback
