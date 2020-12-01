@@ -9,6 +9,7 @@ string predefined_pose_id
 #result definition
 int32 error_code
 int32 cost
+string armUsed
 ---
 #feedback
 int32 status
