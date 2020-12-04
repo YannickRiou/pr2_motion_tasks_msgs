@@ -4,7 +4,9 @@
 ## Pick
 ### goal
 *objId* : name of the object to be picked
+
 *planGroup* : arm name to be used (left_arm, right_arm). If none is specified, the arm closer to the object is chose
+
 ### result
 #### Error codes
 1: Success  
@@ -14,12 +16,15 @@
 -6:	Update of the world failed (failed to get poses from underworld service)  
 
 *cost*: return the cost of the planified task
+
 *armUsed*: return the arm name (left_arm, right_arm) that is used in the task.
 
 ## Place
 ### goal
 *objId*: name of the object to be placed (optional)
+
 *boxId*: name of the box in which to place the object
+
 *planGroup* : arm name to be used (left_arm, right_arm).
 
 ### result
@@ -31,13 +36,16 @@
 -6:	Update of the world failed (failed to get poses from underworld service)  
 
 *cost*: return the cost of the planified task
+
 *armUsed*: return the arm name (left_arm, right_arm) that is used in the task **(not useful for this task)**
 
 
 ## move
 ### goal
 *pose*: a specific pose (PoseStamped ros type) to move the arm to. Mutually exclusive with predefined_pose_id.
+
 *predefined_pose_id*: a predefined pose id (left_arm_home, etc.). Mutually exclusive with pose.
+
 *planGroup* : arm name to be used (left_arm, right_arm).
 
 ### result
@@ -49,11 +57,13 @@
 -6:	Update of the world failed (failed to get poses from underworld service)  
 
 *cost*: return the cost of the planified task
+
 *armUsed*: return the arm name (left_arm, right_arm) that is used in the task. **(not useful for this task)**
 
 ## drop
 ### goal
 *objId*: name of the object to be dropped (optional)
+
 *planGroup* : arm to be used for the drop
 
 ### result
@@ -65,6 +75,7 @@
 -6:	Update of the world failed (failed to get poses from underworld service)  
 
 cost: return the cost of the planified task
+
 armUsed: return the arm name (left_arm, right_arm) that is used in the task. **(not useful for this task)**
 
 ### Feedback
