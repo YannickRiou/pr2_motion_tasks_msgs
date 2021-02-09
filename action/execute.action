@@ -2,6 +2,8 @@
 ---
 #result definition
 int32 error_code
+time action_end
 ---
 #feedback
 int32 status
+time action_start
