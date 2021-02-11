@@ -10,7 +10,6 @@ project(pr2_motion_tasks_msgs)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
-  moveit_msgs
   actionlib
   std_msgs
   geometry_msgs
@@ -74,7 +73,6 @@ find_package(catkin REQUIRED COMPONENTS
    std_msgs
    actionlib_msgs
    geometry_msgs
-   moveit_msgs
  )
 
 ################################################
