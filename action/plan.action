@@ -1,5 +1,6 @@
 #goal definition
 string action
+string objId
 string planGroup
 geometry_msgs/PoseStamped pose
 string predefined_pose_id
