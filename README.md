@@ -23,7 +23,7 @@
 ### goal
 *objId*: name of the object to be placed (optional)
 
-*boxId*: name of the box in which to place the object
+*pose*: pose where to place the object. frame_id of the pose is used as a support surface.
 
 *planGroup* : arm name to be used (left_arm, right_arm).
 
@@ -63,6 +63,8 @@
 ## drop
 ### goal
 *objId*: name of the object to be dropped (optional)
+
+*pose*: pose where to drop the object. 
 
 *planGroup* : arm to be used for the drop
 
